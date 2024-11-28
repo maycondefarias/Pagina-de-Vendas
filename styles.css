@@ -1,90 +1,106 @@
-.
-body {
-    font-family: Arial, sans-serif;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
+    background-color: #333;
+    color: #fff;
     padding: 1rem 0;
+    text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2rem;
+.search-bar {
+    margin-top: 1rem;
 }
 
+.search-bar input {
+    padding: 0.5rem;
+    width: 70%;
+    max-width: 400px;
+}
+
+.search-bar button {
+    padding: 0.5rem;
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #e67e22;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
 
 .products {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .product {
-    background: white;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    overflow: hidden;
     text-align: center;
-    padding: 15px;
-    transition: transform 0.2s, box-shadow 0.2s;
+    padding: 1rem;
+    background-color: #fff;
 }
 
 .product img {
     width: 100%;
-    height: auto;
-    border-radius: 5px;
+    height: 150px;
+    object-fit: cover;
 }
 
-.product h2 {
+.product h3 {
+    margin: 0.5rem 0;
     font-size: 1.2rem;
-    margin: 10px 0;
-}
-
-.product p {
-    font-size: 0.9rem;
-    color: #666;
 }
 
 .product .price {
+    display: block;
+    margin: 1rem 0;
     font-size: 1.1rem;
+    color: #27ae60;
     font-weight: bold;
-    color: #4CAF50;
-    margin: 10px 0;
 }
 
 .product button {
-    background-color: #4CAF50;
-    color: white;
+    padding: 0.5rem 1rem;
+    background-color: #3498db;
+    color: #fff;
     border: none;
-    padding: 10px 15px;
-    font-size: 1rem;
-    border-radius: 5px;
     cursor: pointer;
 }
 
 .product button:hover {
-    background-color: #45a049;
+    background-color: #2980b9;
 }
-
-.product:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
 
 footer {
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 10px 0;
-    background-color:#4CAF50;
-    color: white;
+    padding: 1rem 0;
+    margin-top: 2rem;
 }
 
