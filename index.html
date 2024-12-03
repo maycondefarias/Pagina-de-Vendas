@@ -3,72 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Loja Online</title>
+    <title>Galáxia Store</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Minha Loja Online</h1>
-        <input type="text" id="searchBar" placeholder="Busque um produto..." onkeyup="searchProducts()">
+    <header class="header">
+        <div class="logo">Galáxia Store</div>
+        <input type="text" id="search-bar" placeholder="Busque um produto..." oninput="searchProducts()">
     </header>
 
-    <main>
-        <section id="product-list">
-            <div class="product" data-name="Produto 1">
-                <img src="https://via.placeholder.com/150" alt="Produto 1">
-                <h2>Produto 1</h2>
-                <p>Descrição breve do produto 1.</p>
-                <span>R$ 50,00</span>
-            </div>
-            <div class="product" data-name="Produto 2">
-                <img src="https://via.placeholder.com/150" alt="Produto 2">
-                <h2>Produto 2</h2>
-                <p>Descrição breve do produto 2.</p>
-                <span>R$ 75,00</span>
-            </div>
-            <div class="product" data-name="Produto 3">
-                <img src="https://via.placeholder.com/150" alt="Produto 3">
-                <h2>Produto 3</h2>
-                <p>Descrição breve do produto 3.</p>
-                <span>R$ 60,00</span>
-            </div>
-            <div class="product" data-name="Produto 4">
-                <img src="https://via.placeholder.com/150" alt="Produto 4">
-                <h2>Produto 4</h2>
-                <p>Descrição breve do produto 4.</p>
-                <span>R$ 80,00</span>
-            </div>
-            <div class="product" data-name="Produto 5">
-                <img src="https://via.placeholder.com/150" alt="Produto 5">
-                <h2>Produto 5</h2>
-                <p>Descrição breve do produto 5.</p>
-                <span>R$ 45,00</span>
-            </div>
-            <div class="product" data-name="Produto 6">
-                <img src="https://via.placeholder.com/150" alt="Produto 6">
-                <h2>Produto 6</h2>
-                <p>Descrição breve do produto 6.</p>
-                <span>R$ 55,00</span>
-            </div>
-            <div class="product" data-name="Produto 7">
-                <img src="https://via.placeholder.com/150" alt="Produto 7">
-                <h2>Produto 7</h2>
-                <p>Descrição breve do produto 7.</p>
-                <span>R$ 70,00</span>
-            </div>
-            <div class="product" data-name="Produto 8">
-                <img src="https://via.placeholder.com/150" alt="Produto 8">
-                <h2>Produto 8</h2>
-                <p>Descrição breve do produto 8.</p>
-                <span>R$ 90,00</span>
-            </div>
-        </section>
+    <main class="product-container">
+        <div class="product-card" data-name="Produto 1">
+            <img src="produto1.jpg" alt="Produto 1">
+            <h2>Produto 1</h2>
+            <p>R$ 89,90</p>
+            <p>Frete: R$ 10,00</p>
+            <button>Comprar</button>
+        </div>
+        <div class="product-card" data-name="Produto 2">
+            <img src="produto2.jpg" alt="Produto 2">
+            <h2>Produto 2</h2>
+            <p>R$ 120,00</p>
+            <p>Frete: R$ 12,00</p>
+            <button>Comprar</button>
+        </div>
+        <div class="product-card" data-name="Produto 3">
+            <img src="produto3.jpg" alt="Produto 3">
+            <h2>Produto 3</h2>
+            <p>R$ 99,00</p>
+            <p>Frete: R$ 8,00</p>
+            <button>Comprar</button>
+        </div>
+        <div class="product-card" data-name="Produto 4">
+            <img src="produto4.jpg" alt="Produto 4">
+            <h2>Produto 4</h2>
+            <p>R$ 150,00</p>
+            <p>Frete: R$ 15,00</p>
+            <button>Comprar</button>
+        </div>
+        <div class="product-card" data-name="Produto 5">
+            <img src="produto5.jpg" alt="Produto 5">
+            <h2>Produto 5</h2>
+            <p>R$ 200,00</p>
+            <p>Frete: R$ 20,00</p>
+            <button>Comprar</button>
+        </div>
+        <div class="product-card" data-name="Produto 6">
+            <img src="produto6.jpg" alt="Produto 6">
+            <h2>Produto 6</h2>
+            <p>R$ 89,90</p>
+            <p>Frete: R$ 10,00</p>
+            <button>Comprar</button>
+        </div>
+        <div class="product-card" data-name="Produto 7">
+            <img src="produto7.jpg" alt="Produto 7">
+            <h2>Produto 7</h2>
+            <p>R$ 300,00</p>
+            <p>Frete: R$ 25,00</p>
+            <button>Comprar</button>
+        </div>
+        <div class="product-card" data-name="Produto 8">
+            <img src="produto8.jpg" alt="Produto 8">
+            <h2>Produto 8</h2>
+            <p>R$ 400,00</p>
+            <p>Frete: R$ 30,00</p>
+            <button>Comprar</button>
+        </div>
     </main>
 
-    <footer>
-        <p>© 2024 Minha Loja Online - Todos os direitos reservados.</p>
+    <footer class="footer">
+        <p>&copy; 2024 Galáxia Store. Todos os direitos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
+

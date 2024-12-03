@@ -1,0 +1,15 @@
+// script.js
+function searchProducts() {
+    const searchQuery = document.getElementById('search-bar').value.toLowerCase();
+    const products = document.querySelectorAll('.product-card');
+
+    products.forEach(product => {
+        const name = product.getAttribute('data-name').toLowerCase();
+        if (name.includes(searchQuery)) {
+            product.style.display = 'block';
+        } else {
+            product.style.display = 'none';
+        }
+    });
+}
+
