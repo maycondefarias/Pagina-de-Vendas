@@ -1,92 +1,77 @@
-/* styles.css */
+/* Arquivo: styles.css */
+
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #0f0f3d, #23235a);
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
     color: white;
+    text-align: center;
+    padding: 1em 0;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background: #101020;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #0dcaf0;
-}
-
-#search-bar {
-    width: 40%;
-    padding: 8px;
+header input {
+    margin-top: 1em;
+    padding: 0.5em;
+    width: 50%;
     border: none;
     border-radius: 5px;
-    outline: none;
-    font-size: 16px;
-    background: #f2f2f2;
-    color: #101020;
+    font-size: 1em;
 }
 
-.product-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+main {
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-.product-card {
-    background: #1a1a3c;
-    border-radius: 10px;
+.product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
     text-align: center;
     padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 200px;
+    background-color: white;
+    transition: transform 0.3s;
 }
 
-.product-card img {
+.product img {
     width: 100%;
     border-radius: 5px;
-    height: 150px;
-    object-fit: cover;
 }
 
-.product-card h2 {
-    font-size: 18px;
+.product h2 {
+    font-size: 1.2em;
     margin: 10px 0;
 }
 
-.product-card p {
-    margin: 5px 0;
-    font-size: 16px;
+.product p {
+    color: #666;
+    font-size: 0.9em;
 }
 
-.product-card button {
-    margin: 10px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    background: #0dcaf0;
+.product span {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #4CAF50;
     color: white;
-    transition: background 0.3s;
-}
-
-.product-card button:hover {
-    background: #0b8bb3;
-}
-
-.footer {
     text-align: center;
-    padding: 15px;
-    background: #101020;
-    font-size: 14px;
-    color: #8f8f8f;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
-
-
-
