@@ -1,117 +1,181 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Loja</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Micaelli Store</h1>
-        <div class="barraPesquisa">
-            <input type="text" id="pesquisa" placeholder="Pesquisar produtos...">
-        </div>
-        <button id="abrirCarrinho">🛒 Carrinho (<span id="quantidadeItens">0</span>)</button>
-    </header>
+Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    <!-- Categorias -->
-    <section class="categorias">
-        <div class="categoria" data-nome="sapatos">
-            <div class="categoria-imagem">
-                <img src="images.jpeg" alt="Sapatos">
-            </div>
-            <p>Sapatos</p>
-        </div>
-        <div class="categoria" data-nome="vestidos">
-            <div class="categoria-imagem">
-                <img src="O1CN01upbtBu27OUtWkcz8I__3296187787-0-cib.jpg" alt="Vestidos">
-            </div>
-            <p>Vestidos</p>
-        </div>
-        <div class="categoria" data-nome="calças">
-            <div class="categoria-imagem">
-                <img src="53-febf2730fb8714fc4b17068387337571-640-0.webp" alt="Calças">
-            </div>
-            <p>Calças</p>
-        </div>
-        <div class="categoria" data-nome="blusas">
-            <div class="categoria-imagem">
-                <img src="whatsapp-image-2022-07-27-at-101925-1.jpeg" alt="Blusas">
-            </div>
-            <p>Blusas</p>
-        </div>
-        <div class="categoria" data-nome="bolsas">
-            <div class="categoria-imagem">
-                <img src="dsc-5218-copiar.png" alt="Bolsas">
-            </div>
-            <p>Bolsas</p>
-        </div>
-        <div class="categoria" data-nome="beleza">
-            <div class="categoria-imagem">
-                <img src="download.jpeg" alt="Beleza">
-            </div>
-            <p>Beleza</p>
-        </div>
-    </section>
+header {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
 
-    <main>
-        <div class="produtos">
-            <!-- Produto 1: Sapatos -->
-            <div class="produto" data-categoria="sapatos" data-nome="Tênis Casual" data-preco="150">
-                <img src="download (1).jpeg" alt="Tênis Casual">
-                <h2>Tênis Casual</h2>
-                <p>Conforto e estilo para o dia a dia.</p>
-                <p class="preco">R$150,00</p>
-                <button class="adicionarCarrinho">Adicionar ao Carrinho</button>
-            </div>
-            <!-- Produto 2: Vestidos -->
-            <div class="produto" data-categoria="vestidos" data-nome="Vestido Floral" data-preco="250">
-                <img src="download (4).jpeg" alt="Vestido Floral">
-                <h2>Vestido Floral</h2>
-                <p>Ideal para ocasiões especiais.</p>
-                <p class="preco">R$250,00</p>
-                <button class="adicionarCarrinho">Adicionar ao Carrinho</button>
-            </div>
-            <!-- Produto 3: Calças -->
-            <div class="produto" data-categoria="calças" data-nome="Calça Jeans" data-preco="120">
-                <img src="images (1).jpeg" alt="Calça Jeans">
-                <h2>Calça Jeans</h2>
-                <p>Durável e confortável.</p>
-                <p class="preco">R$120,00</p>
-                <button class="adicionarCarrinho">Adicionar ao Carrinho</button>
-            </div>
-            <!-- Produto 4: Blusas -->
-            <div class="produto" data-categoria="blusas" data-nome="Blusa de Algodão" data-preco="80">
-                <img src="images (2).jpeg" alt="Blusa de Algodão">
-                <h2>Blusa de Algodão</h2>
-                <p>Perfeita para o dia a dia.</p>
-                <p class="preco">R$80,00</p>
-                <button class="adicionarCarrinho">Adicionar ao Carrinho</button>
-            </div>
-            <!-- Produto 5: Bolsas -->
-            <div class="produto" data-categoria="bolsas" data-nome="Bolsa de Couro" data-preco="300">
-                <img src="download (5).jpeg" alt="Bolsa de Couro">
-                <h2>Bolsa de Couro</h2>
-                <p>Elegância e qualidade.</p>
-                <p class="preco">R$300,00</p>
-                <button class="adicionarCarrinho">Adicionar ao Carrinho</button>
-            </div>
-            <!-- Produto 6: Beleza -->
-            <div class="produto" data-categoria="beleza" data-nome="Kit de Maquiagem" data-preco="200">
-                <img src="download (6).jpeg" alt="Kit de Maquiagem">
-                <h2>Kit de Maquiagem</h2>
-                <p>Beleza e sofisticação.</p>
-                <p class="preco">R$200,00</p>
-                <button class="adicionarCarrinho">Adicionar ao Carrinho</button>
-            </div>
-        </div>
-    </main>
+header h1 {
+    font-size: 2em;
+    color: #ac38cf;
+}
 
-    <footer>
-        <p>Minha Loja. Todos os direitos reservados.</p>
-    </footer>
-    <script src="script.js"></script>
-</body>
-</html>
+/* Barra de pesquisa */
+.barraPesquisa {
+    margin: 15px 0;
+}
 
+#pesquisa {
+    padding: 10px;
+    font-size: 1em;
+    width: 60%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#abrirCarrinho {
+    background-color: #e1abf6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#abrirCarrinho:hover {
+    background-color: #e1abf6;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.produto {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.produto img {
+
+
+
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.produto h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.produto p {
+    margin: 5px 0;
+}
+
+.adicionarCarrinho {
+    background-color: #e1abf6;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.adicionarCarrinho:hover {
+    background-color: #e1abf6;
+}
+
+/* Estilos do carrinho */
+#carrinho {
+    display: none;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Categorias */
+.categorias {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.categoria {
+    text-align: center;
+    width: 80px;
+    cursor: pointer;
+}
+
+.categoria-imagem {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #e1b3f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px hwb(296 64% 7% / 0.1);
+}
+
+.categoria-imagem img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.categoria p {
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+
+
+#carrinho h2 {
+    margin-top: 0;
+}
+
+#fecharCarrinho {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#fecharCarrinho:hover {
+    background-color: darkred;
+}
+
+/* Rodapé */
+footer {
+    margin-top: auto;
+    text-align: center;
+    background-color: #ac38cf;
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
