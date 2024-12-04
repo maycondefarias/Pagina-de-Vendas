@@ -87,35 +87,4 @@ body {
     font-size: 14px;
     color: #1A1A1D;
 }
-}
-nav {
-    background-color: #333;
-    padding: 10px;
-}
-nav a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-}
-.search-bar {
-    margin: 10px auto;
-    display: flex;
-    justify-content: center;
-}
-.search-bar input {
-    width: 300px;
-    padding: 5px;
-}
-.search-bar button {
-    padding: 5px 10px;
-    background-color: #555;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-.search-bar button:hover {
-    background-color: #777;
-}
-
-
 
