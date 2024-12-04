@@ -51,7 +51,7 @@ body {
     width: 100%;
     border-radius: 5px;
     height: 150px;
-    object-fit: auto;
+    object-fit: contain;
 }
 
 .product-card h2 {
